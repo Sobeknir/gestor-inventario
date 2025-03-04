@@ -113,7 +113,7 @@ let reportes = {
         };
 
         // Almacenar el reporte diario en la base de datos
-        const ReporteDiario = require('../models/reporteDiario'); // Importar el modelo de reporte
+        const ReporteDiario = require('./models/reporteDiario'); // Importar el modelo de reporte
         const nuevoReporteDiario = new ReporteDiario(reporteDiario);
         await nuevoReporteDiario.save();
 

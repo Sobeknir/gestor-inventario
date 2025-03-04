@@ -7,12 +7,16 @@ const itemSchema = new mongoose.Schema({
     },
     cantidad: { // Cambiado a cantidad
         type: Number,
-        required: true
+        required: true,
+        min: 0 // Validación para que sea un número positivo
     },
+
     precioUnitario: { // Se mantiene como precioUnitario
         type: Number,
-        required: true
+        required: true,
+        min: 0 // Validación para que sea un número positivo
     },
+
     Descripción: { // Cambiado a Descripción
         type: String,
         required: false
